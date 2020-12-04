@@ -1,3 +1,8 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 #buton{
 	clear:both;
 	text-align: center;
@@ -13,22 +18,21 @@
 #f1_container {
   width: 60%;
   height: 80%;
-  max-width: 300px;
-  max-height: 500px;
+  max-width: 1920px;
+  max-height: 1080px;
   position: relative;
   perspective: 900px;
   margin: 0 auto;
 }
 #flippy2{
 	
-	width: 100%;
+  width: 100%;
   height: 100%;
   text-align: center;
   margin: 50px auto;
   position: absolute;
   transition: all 1s linear;
   transform-style: preserve-3d;
-
 }
 .flip{
 	
@@ -36,24 +40,18 @@
 	/*box-shadow: -5px 5px 5px #000;*/
 	
 }
-#flippy2.face,#flippy2.back {
-	
+#flippy2 .face, #flippy2 .back {
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   z-index: 2;
-  -webkit-box-shadow: 5px 6px 32px 2px rgba(255,133,133,0.71);
-	
 }
-.back{
+
+#flippy2 .back{
 	
-	background: lightblue;
-    border: 1px solid grey;
-	text-align: center;
-	
-	
-	
+	text-align: center;	
+    transform: rotateX(180deg);
 	
 }
 
