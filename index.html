@@ -21,41 +21,60 @@
                 
             </div>
         </header>
+     <div id="f1_container">
+	   <div id="flippy2">
+			<div class="face">
+			<!-- stergeti asta cand faceti ceva ca lumea :)))-->
+					<h1>This is Learndomly</h1>
         
-        <!-- stergeti asta cand faceti ceva ca lumea :)))-->
-        <h1>This is Learndomly</h1>
+			<!-- buton de afisare setari -->
+					<button type="button" onclick=showSettings()>Show Settings</button>
         
-        <!-- buton de afisare setari -->
-        <button type="button" onclick=showSettings()>Show Settings</button>
+			<!-- actual settings -->
+					<div id="settings" style="display:none">
+						<form>
+							<input id="sport" name="config" type="checkbox"> <label for="sport">Sport</label>
+							<input id="hands-on" name="config" type="checkbox"> <label for="hands=on">Hands-on</label>
+							<input id="arts" name="config" type="checkbox"> <label for="arts">Arts</label>
+							<input id="language" name="config" type="checkbox"> <label for="language">Language</label>
+							<input id="mind" name="config" type="checkbox"> <label for="mind">Mind</label>
+							<input id="house" name="config" type="checkbox"> <label for="mind">House</label>
+						</form>
+					</div>
         
-        <!-- actual settings -->
-        <div id="settings" style="display:none">
-            <form>
-                <input id="sport" name="config" type="checkbox"> <label for="sport">Sport</label>
-                <input id="hands-on" name="config" type="checkbox"> <label for="hands=on">Hands-on</label>
-                <input id="arts" name="config" type="checkbox"> <label for="arts">Arts</label>
-                <input id="language" name="config" type="checkbox"> <label for="language">Language</label>
-                <input id="mind" name="config" type="checkbox"> <label for="mind">Mind</label>
-                <input id="house" name="config" type="checkbox"> <label for="mind">House</label>
-            </form>
-        </div>
-        
-        <!-- in acest div va fi elementul generat random (link sau altele)-->
-        <div id="generated">
+			<!-- in acest div va fi elementul generat random (link sau altele)-->
+					<div id="generated">
             
             <!-- welcome screen-->
-            <div class="screens" id="welcome" >
-                <h1>Welcome to Learndomly</h1>
-            </div>
+						<div class="screens" id="welcome" >
+							<h1>Welcome to Learndomly</h1>
+						</div>
             
             <!-- screen pentru diverse -->
-            <div class="screens" id="external" style="display:none"></div>
+						<div class="screens" id="external" style="display:none"></div>
             
             <!-- in iframe vor fi video-urile youtube -->
-            <div>
-                <iframe id="screenYT" class="screens" style="display:none" width="560" height="315"  src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+						<div>
+							<iframe id="screenYT" class="screens" style="display:none" width="560" height="315"  src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
         
-       
+					</div>
+			</div>
+			<div class="back">
+				 Buna 
+			</div>
+	
+		</div>	
+	 </div>
+	 
+		
+  
+  
+	  
+	   
+	    <button  id="buton" onclick=FlipButton() > 
+		 Wanna learn more?
+		  </button>
+	   
     </body>
 </html> 

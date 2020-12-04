@@ -1,0 +1,59 @@
+#buton{
+	clear:both;
+	text-align: center;
+	position: fixed;
+	font-family: cursive;
+	padding: 10px;
+	width: 100%;
+	bottom: 0;
+	left:0;
+	color: #0d0d0d;
+}
+
+#f1_container {
+  width: 60%;
+  height: 80%;
+  max-width: 300px;
+  max-height: 500px;
+  position: relative;
+  perspective: 900px;
+  margin: 0 auto;
+}
+#flippy2{
+	
+	width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 50px auto;
+  position: absolute;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
+
+}
+.flip{
+	
+	transform: rotateX(180deg);
+	/*box-shadow: -5px 5px 5px #000;*/
+	
+}
+#flippy2.face,#flippy2.back {
+	
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  z-index: 2;
+  -webkit-box-shadow: 5px 6px 32px 2px rgba(255,133,133,0.71);
+	
+}
+.back{
+	
+	background: lightblue;
+    border: 1px solid grey;
+	text-align: center;
+	
+	
+	
+	
+}
+

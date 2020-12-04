@@ -1,6 +1,16 @@
 //event listener
 window.addEventListener("keydown", checkKeyPress, false);
 
+function FlipButton()
+{
+    
+		document.getElementById("flippy2").classList.toggle("flip");
+	
+	
+}
+
+
+
 function showSettings(){
     let temp = document.getElementById("settings").style.display
     if(temp == "none")
