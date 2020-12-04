@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Create JSON string from a JavaScript array.</h2>
+
+        <p id="demo"></p>
+
+        <!-- FOLOSITI DOCUMENTUL ASTA HTML PENTRU A CREA TEXT PENTRU DOCUMENT JSON -->
+        
+        <script>
+            var arr = [
+                          {
+                            "name": "John",
+                            "surname": "Doe",
+                            "age": 31,
+                            "city": "New York"
+                          },
+                          {
+                            "name": "Jane",
+                            "surname": "Doe",
+                            "age": 26,
+                            "city": "Seattle"
+                          },
+                          {
+                            "name": "Dave",
+                            "surname": "Smith",
+                            "age": 45,
+                            "city": "LA"
+                          },
+                          {
+                            "name": "Alessia",
+                            "surname": "Smith",
+                            "age": 41,
+                            "city": "Texas"
+                          }
+                        ];
+            var myJSON = JSON.stringify(arr);
+            document.getElementById("demo").innerHTML = myJSON;
+        </script>
+    </body>
+</html>
