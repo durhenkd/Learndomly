@@ -5,12 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>Learndomly</title>
+        
+         <script src="data.js"></script>
+        <script src="script.js"></script>
     </head>
     
     <body>
         
         <!-- stergeti asta cand faceti ceva ca lumea :)))-->
         <h1>This is Learndomly</h1>
+        
+        <button type="button" onclick=showSettings()>Show Settings</button>
+        
+        <div id="settings">
+            <form>
+                <input id="sport" name="config" type="checkbox"> <label for="sport">Sport</label>
+                <input id="hands-on" name="config" type="checkbox"> <label for="hands=on">Hands-on</label>
+                <input id="arts" name="config" type="checkbox"> <label for="arts">Arts</label>
+                <input id="language" name="config" type="checkbox"> <label for="language">Language</label>
+                <input id="mind" name="config" type="checkbox"> <label for="mind">Mind</label>
+                <input id="house" name="config" type="checkbox"> <label for="mind">House</label>
+            </form>
+        </div>
         
         <!-- in acest div va fi elementul generat random (link sau altele)-->
         <div id="generated">
@@ -20,12 +36,10 @@
             </div>
             
             <!-- in iframe vor fi video-urile youtube -->
-            <div id="screenYT" class="screens" >
-                <iframe width="560" height="315" style="display:none" src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                <iframe id="screenYT" class="screens" style="display:none" width="560" height="315"  src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         
-        <script src="data.js"></script>
-        <script src="script.js"></script>
-        
+       
     </body>
 </html> 
