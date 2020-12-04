@@ -12,12 +12,24 @@
     
     <body>
         
+        <header>
+            <div id="login">
+                <a href="login.html">Log in</a>
+            </div>
+            
+            <div id="user" style="display:none">
+                
+            </div>
+        </header>
+        
         <!-- stergeti asta cand faceti ceva ca lumea :)))-->
         <h1>This is Learndomly</h1>
         
+        <!-- buton de afisare setari -->
         <button type="button" onclick=showSettings()>Show Settings</button>
         
-        <div id="settings">
+        <!-- actual settings -->
+        <div id="settings" style="display:none">
             <form>
                 <input id="sport" name="config" type="checkbox"> <label for="sport">Sport</label>
                 <input id="hands-on" name="config" type="checkbox"> <label for="hands=on">Hands-on</label>
@@ -31,9 +43,13 @@
         <!-- in acest div va fi elementul generat random (link sau altele)-->
         <div id="generated">
             
+            <!-- welcome screen-->
             <div class="screens" id="welcome" >
                 <h1>Welcome to Learndomly</h1>
             </div>
+            
+            <!-- screen pentru diverse -->
+            <div class="screens" id="external" style="display:none"></div>
             
             <!-- in iframe vor fi video-urile youtube -->
             <div>

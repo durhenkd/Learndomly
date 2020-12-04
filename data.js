@@ -27,7 +27,6 @@ var YouTube = [
     {link:"https://www.youtube.com/embed/lSPOMKW8ivs",category:"language"},
     {link:"https://www.youtube.com/embed/Kz64czn1JcQ",category:"language"},
     {link:"https://www.youtube.com/embed/McZW0iDsZns",category:"language"},
-    {link:"https://www.youtube.com/embed/23J4O8NvWBs",category:"language"},
     {link:"https://www.youtube.com/embed/9DdkqOHDiLE",category:"language"}  ],
     
 [   {link:"https://www.youtube.com/embed/7Ron6MN45LY",category:"mind"},
@@ -41,6 +40,7 @@ var YouTube = [
     {link:"https://www.youtube.com/embed/vRtwq_XZEZM",category:"house"},
     {link:"https://www.youtube.com/embed/MSr04jhuTes",category:"house"},
     {link:"https://www.youtube.com/embed/2IBaaQXP39I",category:"house"},
+    {link:"https://www.youtube.com/embed/23J4O8NvWBs",category:"house"},
     {link:"https://www.youtube.com/embed/HHgIC6YVQek",category:"house"},
     {link:"https://www.youtube.com/embed/R1FfZiiK-I4",category:"house"} ],
     
