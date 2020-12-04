@@ -14,8 +14,15 @@
         
         <!-- in acest div va fi elementul generat random (link sau altele)-->
         <div id="generated">
-            <!-- in iframe va fi pagina in cauza -->
-            <iframe id="screenYT" class="screens" width="560" height="315" src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <div class="screens" id="welcome" >
+                <h1>Welcome to Learndomly</h1>
+            </div>
+            
+            <!-- in iframe vor fi video-urile youtube -->
+            <div id="screenYT" class="screens" >
+                <iframe width="560" height="315" style="display:none" src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         
         <script src="data.js"></script>
         <script src="script.js"></script>
