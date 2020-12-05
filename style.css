@@ -12,6 +12,7 @@
 	font-family: cursive;
 	padding: 10px;
 	width: 100%;
+    height: 20px;
 	bottom: 0;
 	left:0;
 	color: #0d0d0d;
@@ -38,7 +39,7 @@
 }
 .flip{
 	
-	transform: rotateX(180deg);
+	transform: rotateY(180deg);
 	/*box-shadow: -5px 5px 5px #000;*/
 	
 }
@@ -165,7 +166,7 @@
 #flippy2 .back{
 	
 	text-align: center;	
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
 	
 }
 
