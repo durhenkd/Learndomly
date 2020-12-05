@@ -332,3 +332,40 @@ q::selection{
 	
 }
 
+.toggleButton::after
+{
+	
+	padding: 10px;
+	content: "\1F4FA Videos \1F4FA";
+	font-size: 30px;
+}
+#but{
+	
+	background:transparent;
+	font-family:'Architects Daughter', cursive;
+	text-transform: uppercase;
+	font-weight:bold;
+	padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+	margin-bottom: 5px;
+	
+}
+#but:hover{
+	
+	background:rgb(255, 243, 23, 0.8);
+	
+} 
+#toggle:checked ~ .toggleButton::after{
+	
+	content: "\1F64C Activities \1F64C";
+	
+}
+.vishide{
+	
+	position: absolute;
+	opacity: 0;
+	top: -100vw;
+	
+}
+
+

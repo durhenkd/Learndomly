@@ -8,6 +8,7 @@ function FlipButton()
 	
 	
 }
+
 function ImageFalse()
 {
     document.getElementById("trick").style.display="block";	
