@@ -5,6 +5,22 @@
     margin: 0px;
 }
 
+#bara {
+	
+	
+	height: 10%;
+	padding: 5px;
+	overflow:hidden;
+	background-color: rgba(255, 146, 52, 0.7);
+	/*rgb(255, 135, 84)*/
+	
+}
+#bara a{
+	float: left;
+	
+}
+
+
 #buton{
 	clear:both;
 	text-align: center;
@@ -61,12 +77,15 @@
 	position: center;
 	margin-left: auto;
 	margin-right: auto;
+	display:flex;
+	justify-content: center;
+
 	
-	
-  font-size: 80px;
+  /*font-size: 80px;*/
+  
   line-height: 0.9;
-  padding: 30px;
-  margin: 10px;
+  padding: 20px;
+ 
   font-family: 'Architects Daughter', cursive;
   text-transform: uppercase;
   background: radial-gradient(
@@ -75,7 +94,7 @@
     
   ) no-repeat;
   text-shadow: 2px 2px 1px #0d0d0d; 
-  border: 1px solid  #0d0d0d;
+ /* border: 1px solid  #0d0d0d;*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -161,14 +180,20 @@
 	
 }
 
-
+iframe{
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
 #video {
 	
 	display:flex;
 	justify-content: center;
 	
 }
-
+#image {
+	width: 350px;
+	height: 400px;
+}
 
 #flippy2 .back{
 	

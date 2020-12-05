@@ -9,7 +9,15 @@ function FlipButton()
 	
 }
 
+function Toopen()
+{
+	document.getElementById("bara").style.display="block";
+}
 
+function Toclose()
+{
+	document.getElementById("bara").style.display="none";
+}
 
 function showSettings(){
     let temp = document.getElementById("settings").style.display
