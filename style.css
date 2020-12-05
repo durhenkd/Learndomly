@@ -478,6 +478,43 @@ q::selection{
 	
 	
 }
+#LogPage{
+	
+	margin: 140px 0 auto;
+	text-align:center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+.frumix {
+	
+	font-family: cursive;
+	font-size: 20px;
+	color: black;
+	display: block;
+    text-align: center;
+    line-height: 150%;
+	margin-top: 10px;
+} 
+.lgn {
+	clear:both;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+    width: 100%;
+    line-height: 150%;
+	margin-top: 10px;
+	align-items: center;
+}
 
+#bcklgn{
+	
+	background-image: url("sunset.png");
+	background-position:center;
+	background-repeat: no-repeat;
+	background-color: #f7ef99;
+	
+}
 
 
