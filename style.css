@@ -74,7 +74,10 @@
   border: 1px solid  #0d0d0d;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-	
+  -moz-background-clip: text;
+  -moz-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
 	
 }
 @media (min-width:200px)
