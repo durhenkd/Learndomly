@@ -15,11 +15,13 @@ function ImageFalse()
 function Toopen()
 {
 	document.getElementById("bara").style.display="block";
+    document.getElementById("iconita_o").style.display = "none";
 }
 
 function Toclose()
 {
 	document.getElementById("bara").style.display="none";
+    document.getElementById("iconita_o").style.display = "block";
 }
 
 function showSettings(){
