@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
@@ -18,8 +20,8 @@
 #f1_container {
   width: 60%;
   height: 80%;
-  max-width: 1920px;
-  max-height: 1080px;
+ /* max-width: 1920px;*/
+ /*max-height: 1080px;*/
   position: relative;
   perspective: 900px;
   margin: 0 auto;
@@ -47,6 +49,118 @@
   backface-visibility: hidden;
   z-index: 2;
 }
+
+.Learn{
+	
+	display: inline-block;
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+  font-size: 80px;
+  line-height: 0.9;
+  padding: 30px;
+  margin: 10px;
+  font-family: 'Architects Daughter', cursive;
+  text-transform: uppercase;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #ffb83c,#ff8e3c,#c75808
+    
+  ) no-repeat;
+  text-shadow: 2px 2px 1px #0d0d0d; 
+  border: 1px solid  #0d0d0d;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	
+	
+}
+@media (min-width:200px)
+{ .Learn{
+	
+	font-size:25px;
+	line-height: 0.20;
+	 padding: 10px;
+	 margin-left: auto;
+	margin-right: auto;
+	}
+	
+
+ 
+
+}
+@media (min-width:600px)
+{ .Learn{
+	
+	font-size:30px;
+	line-height: 0.30;
+	 padding: 10px;
+	 margin-left: auto;
+	margin-right: auto;
+	}
+	
+/*	#video {
+	
+	margin-left: 150px;
+	margin-right: 150px;
+	
+	}
+  */
+ 
+
+}
+@media (min-width:700px)
+{ .Learn{
+	
+	font-size:40px;
+	line-height: 0.45;
+	 padding: 10px;
+	 margin-left: auto;
+	margin-right: auto;
+	}
+	
+/*	#video {
+	
+	margin-left: 200px;
+	margin-right: 200px;
+	
+	}
+*/  
+  
+
+
+}
+@media (min-width:800px)
+{
+	.Learn{
+	
+	font-size:56px;
+	line-height: 0.6;
+	padding:14px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	/*#video {
+	
+	margin-left: 150px;
+	margin-right: 150px;
+	}*/
+	
+	
+
+	
+}
+
+
+#video {
+	
+	display:flex;
+	justify-content: center;
+	
+}
+
 
 #flippy2 .back{
 	
