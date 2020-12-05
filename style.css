@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
+
+
 
 * {
     padding: 0px;
     margin: 0px;
 	
 }
-
+/* definire sidebar*/
 #bara {
 	
 	
@@ -63,7 +66,7 @@
 	color: #0d0d0d;
 	
 }
-
+/* flip box easter egg*/
 #f1_container {
   width: 60%;
   height: 80%;
@@ -107,11 +110,10 @@
 	
 	display: inline-block;
 	position: center;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	display:flex;
 	justify-content: center;
-
+   
 	
   /*font-size: 80px;*/
   
@@ -215,6 +217,7 @@
 #image{
 	
 	width: 450px;
+	height: 400px;
 }
 iframe{
 	padding-top: 90px;
@@ -227,7 +230,7 @@ iframe{
 	justify-content: center;
 	
 }
-
+/*  animated border*/
 #flippy2 .back{
 	
 	text-align: center;	
@@ -273,7 +276,11 @@ iframe{
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055,#FF7272,#FFB385,#FF7272,#FFD31D,#f79533 );
+ /* background: linear-gradient(60deg, #f79533, #f37055,#FF7272,#FFB385,#FF7272,#FFD31D,#f79533 );*/
+/*	background: linear-gradient(60deg, #583d72, #9f5f80, #ffb493, #ff8e71 , #ffb493, #9f5f80, #583d72);*/
+	/*background: linear-gradient(60deg, #ffa45b, #ffda77, #fbf76a, #ffda77, #ffa45b);*/
+	/*background: linear-gradient(60deg, #583d72, #9f5f80, #ff8e71, #ffba93, #ff8e71, #9f5f80, #583d72);*/
+ background: linear-gradient(60deg, #f79533, #f37055,#FF7272,#FFB385,#FF7272,#FFD31D,#f79533 );
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   animation: borderRotate 1000ms ease alternate infinite;
@@ -297,7 +304,7 @@ q::selection{
 	}
 	
 }
-
+ /* first easter egg , trick user with arrow*/
 #sageata{
 	
 	width: 2em;
@@ -309,6 +316,7 @@ q::selection{
  display: none;
 }
 
+/* attributes for mysterious page*/
 #imaginepisica {
 	
 	display:flex;
@@ -331,7 +339,7 @@ q::selection{
 	margin: 0 auto;
 	
 }
-
+/* button checkbox toggle videos/activities*/
 .toggleButton::after
 {
 	
@@ -340,19 +348,20 @@ q::selection{
 	font-size: 30px;
 }
 #but{
-	
+	clear:both;
 	background:transparent;
 	font-family:'Architects Daughter', cursive;
 	text-transform: uppercase;
 	font-weight:bold;
 	padding: 0.5rem 1rem;
     border-radius: 0.7rem;
-	margin-bottom: 5px;
+	margin: 10px auto;
 	
 }
 #but:hover{
 	
 	background:rgb(255, 243, 23, 0.8);
+	margin: 10px auto;
 	
 } 
 #toggle:checked ~ .toggleButton::after{
@@ -367,5 +376,97 @@ q::selection{
 	top: -100vw;
 	
 }
+
+/* animated intro text */
+
+.unu {
+	margin:0 auto;
+	font: 35px;
+	opacity:0;
+	animation: LetterAnim ease 3s;
+	transform: rotateY(-50px);
+	
+}
+
+.unu h2:first-child{
+	
+	animation-delay:0.5s;
+}
+.unu h2:last-child{
+	
+	animation-delay:0.7s;
+	color:rgb(255, 243, 23);
+	text-shadow: 1px 1px #963b05;
+	
+	/*color:#f79533;*/
+	
+}
+
+.doi{
+	clear:both;
+	margin:0 auto;
+	display: inline-block;
+	font: 30px;
+	opacity:0;
+	animation: LetterAnim2 ease 3s;
+	-webkit-animation-fill-mode: forwards;
+	animation-delay: 1.1s;
+	transform: rotateY(-50px);
+	
+}
+@keyframes LetterAnim
+{
+	0%{
+	  
+	  transform:translateY(-50px);
+      opacity: 0;
+	}
+	
+	20%{
+	
+	  transform: translateY(0);
+      opacity: 1;
+		
+	}
+	80%{ 
+	   transform: translateY(0);
+       opacity: 1;
+		
+	}
+	100%{
+	   transform: translateY(50px);
+       opacity: 0;
+	   display:none;
+	}
+	
+	
+}
+@keyframes LetterAnim2
+{
+	0%{
+	  
+	  transform:translateY(-50px);
+      opacity: 0;
+	}
+	
+	20%{
+	
+	  transform: translateY(0);
+      opacity: 1;
+		
+	}
+	80%{ 
+	   transform: translateY(0);
+       opacity: 1;
+		
+	}
+	100%{
+		 opacity: 1;
+		 
+	}
+	
+	
+}
+
 
 
