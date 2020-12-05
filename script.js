@@ -52,7 +52,13 @@ function checkKeyPress(key){
             
             console.log(settings);
             
-            var pool = YouTube;
+            let rPool = Math.floor(Math.random() * 2);
+            var pool;
+            if(rPool == 0)
+                pool = YouTube;
+            else
+                pool = external;
+                
             
             let rCat = Math.floor(Math.random() * pool.length);
             while(settings[rCat] != true)
@@ -60,10 +66,16 @@ function checkKeyPress(key){
             
             let rIndex = Math.floor(Math.random() * pool[rCat].length);
             
-            console.log(rCat, rIndex);
-            
-            document.getElementById("screenYT").style.display = "block";
-            document.getElementById("screenYT").src = pool[rCat][rIndex].link;
+            if(rPool == 0)
+                {
+                    document.getElementById("screenYT").src = pool[rCat][rIndex].link;
+                    document.getElementById("screenYT").style.display = "block";
+                }
+            else{
+                document.getElementById("external").href = pool[rCat][rIndex].link;
+                document.getElementById("external").innerHTML = pool[rCat][rIndex].title;
+                document.getElementById("externalWrapper").style.display = "block";
+            }
         }
 }
 

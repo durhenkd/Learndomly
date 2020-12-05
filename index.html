@@ -50,14 +50,16 @@
 					<div id="generated">
             
             <!-- welcome screen-->
-						<div class="Learn" id="welcome" >
+						<div class="Learn, screens" id="welcome" >
 							<!--<p>Learndomly</p> -->
 							<image id="image" src="Learndomly_5.png">
 							
-						</div>
+                            </image></div>
             
             <!-- screen pentru diverse -->
-						<div class="screens" id="external" style="display:none"></div>
+						<div style="display:none" class="screens" id="externalWrapper" >
+                                <a  id="external"  target="_blank" href="about:blank"></a>
+                        </div>
             
             <!-- in iframe vor fi video-urile youtube width="560" height="315" -->
 						<div id="video">
@@ -74,7 +76,7 @@
   
 	  
 	   
-	    <div  id="buton" onclick=FlipButton()> Wanna learn more?</div>
+	    <div  id="buton" onclick=FlipButton()></div>
 	   
     </body>
 </html> 
