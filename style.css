@@ -3,23 +3,52 @@
 * {
     padding: 0px;
     margin: 0px;
+	
 }
 
 #bara {
 	
 	
-	height: 10%;
-	padding: 5px;
+	display: inline-block;
 	overflow:hidden;
-	background-color: rgba(255, 146, 52, 0.7);
+	display:flex;
+	flex-wrap:wrap;
+	padding: 2px;
+	background-color: rgba(255, 146, 52, 0.5);
+	
 	/*rgb(255, 135, 84)*/
 	
 }
+#iconita_b{
+	width: 50px;
+	float: left;
+}
 #bara a{
 	float: left;
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	font-family: 'Architects Daughter', cursive;
+  text-transform: uppercase;
 	
 }
-
+#bara a. easter{
+	float: right;
+	background: transparent;
+	padding: 10px;
+}
+#bara a:hover {
+	background:rgba(224, 73, 20, 0.8) 5px;
+	color: #f9e0ae;
+	text-decoration: underline;
+}
+.buton_bara
+{
+	float: left;
+	background-color: rgba(224, 73, 20, 0);
+	border:none;
+	
+} 
 
 #buton{
 	clear:both;
@@ -32,6 +61,7 @@
 	bottom: 0;
 	left:0;
 	color: #0d0d0d;
+	
 }
 
 #f1_container {
@@ -42,16 +72,18 @@
   position: relative;
   perspective: 900px;
   margin: 0 auto;
+
 }
 #flippy2{
 	
   width: 100%;
   height: 100%;
   text-align: center;
-  margin: 50px auto;
+  margin: 30px auto;
   position: absolute;
   transition: all 1s linear;
   transform-style: preserve-3d;
+
 }
 .flip{
 	
@@ -101,6 +133,7 @@
   -moz-color: transparent;
 	background-clip: text;
 	text-fill-color: transparent;
+	
 	
 }
 @media (min-width:200px)
@@ -179,7 +212,10 @@
 
 	
 }
-
+#image{
+	
+	width: 450px;
+}
 iframe{
 	padding-top: 90px;
 	padding-bottom: 40px;
@@ -208,6 +244,7 @@ iframe{
 	align-items:center;
 	justify-content:center;
 	flex-wrap:wrap;
+	background-color: rgba(255,255,255,0);
 	
 
 }
@@ -224,7 +261,7 @@ iframe{
 	text-transform: uppercase;
 	margin-bottom: 10px;
 	position: relative;
-	border-color: #FFe;
+	border: 1px #FFe;
 	border-radius: var(--borderWidth);
 	/*border: 0.3em solid ; */
 	/*padding: 5px;*/
@@ -242,7 +279,10 @@ iframe{
   animation: borderRotate 1000ms ease alternate infinite;
   background-size: 300% 300%;
 }
-
+q::selection{
+ background:transparent;
+ 
+}
 	
 @keyframes borderRotate {
 	
@@ -258,4 +298,37 @@ iframe{
 	
 }
 
+#sageata{
+	
+	width: 2em;
+	margin: 20px;
+	display: inline-block;
+	justify-content:center;
+}
+#trick{ 
+ display: none;
+}
+
+#imaginepisica {
+	
+	display:flex;
+	margin: 0 auto;
+	height: 600px;
+	justify-content: center;
+	
+}
+.pisi 
+{
+	display: block;
+	align-items:center;
+	margin: 0 auto;
+}
+.pisi a{
+	display: block;
+	align-items:center;
+	text-align:center;
+	text-align:center;
+	margin: 0 auto;
+	
+}
 

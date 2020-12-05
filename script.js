@@ -8,7 +8,10 @@ function FlipButton()
 	
 	
 }
-
+function ImageFalse()
+{
+    document.getElementById("trick").style.display="block";	
+}
 function Toopen()
 {
 	document.getElementById("bara").style.display="block";
