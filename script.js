@@ -8,10 +8,7 @@ function FlipButton()
 	
 	
 }
-function logIn()
-{
-	window.location.href="index.html";
-}
+
 function ImageFalse()
 {
     document.getElementById("trick").style.display="block";	
