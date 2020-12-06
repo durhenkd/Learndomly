@@ -528,10 +528,19 @@ q::selection{
     line-height: 150%;
 	margin-top: 10px;
 } 
-.lgn {
+#ok {
 	clear:both;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content:center;
+    width: 100%;
+    line-height: 150%;
+	margin-top: 10px;
+	align-items: center;
+}
+.lgn {
+	clear:both;
+	
 	justify-content:center;
     width: 100%;
     line-height: 150%;
