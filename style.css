@@ -517,4 +517,32 @@ q::selection{
 	
 }
 
+#contacts {
+    text-align: center;
+    font-family:'Architects Daughter', cursive;
+    font-size: 30px;
+    padding: 100px;
+}
 
+#contacts a {
+    text-decoration: none;
+}
+
+#contacts a:visited {
+    color: black;
+}
+
+#contacts p:hover {
+    animation: colorChange 1000ms infinite;
+    color: coral;
+}
+
+@keyframes colorChange{
+    0, 100% {
+        color: coral;
+    }
+    
+    50% {
+        color: greenyellow;
+    }
+}
