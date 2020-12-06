@@ -590,6 +590,8 @@ q::selection{
 	text-transform: justify;
 	align-items:center;
 	background-color: lightgoldenrodyellow;
+	margin-bottom: 2em;
+	margin-top: 1em;
 }
 #external::before {
  content: ' " ';
