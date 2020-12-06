@@ -355,7 +355,7 @@ q::selection{
 	
 	display:flex;
 	margin: 0 auto;
-	height: 600px;
+	height: 497px;
 	justify-content: center;
 	
 }
@@ -549,10 +549,11 @@ q::selection{
 }
 
 #contacts {
+	clear:both;
     text-align: center;
     font-family:'Architects Daughter', cursive;
     font-size: 30px;
-    padding: 100px;
+    padding: 50px;
 }
 
 #contacts a {
