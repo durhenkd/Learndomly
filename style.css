@@ -569,6 +569,10 @@ q::selection{
     text-decoration: none;
 }
 
+#contacts a {
+    color: black;
+}
+
 #contacts a:visited {
     color: black;
 }
