@@ -13,6 +13,10 @@ function ImageFalse()
 {
     document.getElementById("trick").style.display="block";	
 }
+function ImageFalsepnch()
+{
+    document.getElementById("pnch").style.display="block";	
+}
 function Toopen()
 {
 	document.getElementById("bara").style.display="block";
@@ -88,8 +92,9 @@ function checkKeyPress(key){
             
             let rJoke = Math.floor(Math.random() * jokes.length);
             document.getElementById("setup").innerHTML = jokes[rJoke].setup;
-            document.getElementById("trick").style.display = "none";
-            document.getElementById("trick").innerHTML = jokes[rJoke].punchline;
+            document.getElementById("pnch").style.display = "none";
+            document.getElementById("pnch").innerHTML = jokes[rJoke].punchline;
+			document.getElementById("trick").style.display = "none";
         }
 }
 

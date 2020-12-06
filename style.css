@@ -308,12 +308,43 @@ q::selection{
 }
  /* first easter egg , trick user with arrow*/
 #sageata{
-	
+	clear: both;
 	width: 2em;
 	margin: 20px;
 	display: inline-block;
 	justify-content:center;
 }
+/*#pnch{
+	
+	width: 3em;
+	margin: 20px;
+	display: inline-block;
+	justify-content:center;
+	display: block;
+}*/
+#lnk {
+	display: block;
+	text-align: center;
+  text-decoration: none;
+  width: 20%;
+  
+	
+}
+#lnk:link, #lnk:visited{
+
+  background-color: #f7ef99;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+ 
+  margin: 0 auto;
+}
+#lnk:hover, #lnk:active{
+	background-color:#e2a445;
+	color: #733f28;
+}
+	
 #trick{ 
   font-size: 24px;
  display: none;
@@ -510,7 +541,7 @@ q::selection{
 
 #bcklgn{
 	
-	background-image: url("sunset.png");
+	/*background-image: url("sunset.png");*/
 	background-position:center;
 	background-repeat: no-repeat;
 	background-color: #f7ef99;
@@ -546,3 +577,35 @@ q::selection{
         color: greenyellow;
     }
 }
+
+#external{
+	
+	min-height: 4em;
+	padding-top: 4em;
+	padding: 1em 4em;
+	font: 2em/150% sans-serif;
+	position: relative;
+	text-align: center;
+	text-transform: justify;
+	align-items:center;
+	background-color: lightgoldenrodyellow;
+}
+#external::before {
+ content: ' " ';
+ top: 0.3rem;
+ left: 0.9rem;
+	
+}
+#external::after{
+	content:' " ';
+	bottom:0.3rem;
+	right:0.8rem;
+}
+#external::before, #external::after
+{
+	position: absolute;
+	height: 3rem;
+	font: 6rem/100% Georgia, "Times New Roman", Times, serif;
+	
+}
+

@@ -124,14 +124,14 @@ var external = [
         "Translate it into Armenian: My dog has a blue pillow",
         "Translate it into French: The ripe blackberry murmurs at the wall",
         "Translate it into Japanese: coffee, internet, soup, panties.",
-        "Translate it into Bosnian: rbhtttpftttbhtbhtpftttbhtttpftttbhtbhtpfbhtcbhtttpftttbhtbhtpftttbhtttpftttbhtbhtpfbhtcbhtttpftttbhtbhtpftttbhtttpftttbhtbhtpfbhtcbhtttpftttbhtbhtpftttbhtttpftttbhtbhtpfbhtc",
+        "Translate it into Bosnian: rbhtttpftttbhtbhtpftttbhtttpftttbhtbhtpfbhtcbhttt<br/>pftttbhtbhtpftttbhtttpftttbhtbhtpfbhtcbhtttpfttt<br/>bhtbhtpftttbhtttpftttbhtbhtpfbhtcbhtttpftttbhtbhtp<br/>ftttbhtttpftttbhtbhtpfbhtc",
         "Read a book!",
         "Read a poem!"
     ],
     
     [
         "Take a personality test on https://www.16personalities.com/",
-        "Visit a museum (you can also do this online https://www.travelandleisure.com/attractions/museums-galleries/museums-with-virtual-tours )",
+        "Visit a museum <br/>(you can also do this online https://www.travelandleisure.com/attractions<br/>/museums-galleries/museums-with-virtual-tours)",
         "Watch a VSauce video!",
         "Play a game of chess!",
         "Learn about Stoicism!",
