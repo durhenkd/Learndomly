@@ -58,13 +58,16 @@ function checkKeyPress(key){
             
             console.log(settings);
             
-            let rPool = Math.floor(Math.random() * 2);
             var pool;
-            if(rPool == 0)
+            
+            var poolPick = document.getElementById("toggle").checked;
+            if(poolPick == false)
                 pool = YouTube;
             else
                 pool = external;
                 
+            
+            
             
             let rCat = Math.floor(Math.random() * pool.length);
             while(settings[rCat] != true)
@@ -72,16 +75,21 @@ function checkKeyPress(key){
             
             let rIndex = Math.floor(Math.random() * pool[rCat].length);
             
-            if(rPool == 0)
+            if(poolPick == false)
                 {
                     document.getElementById("screenYT").src = pool[rCat][rIndex].link;
                     document.getElementById("screenYT").style.display = "block";
                 }
             else{
-                document.getElementById("external").href = pool[rCat][rIndex].link;
-                document.getElementById("external").innerHTML = pool[rCat][rIndex].title;
+                document.getElementById("external").innerHTML = pool[rCat][rIndex];
                 document.getElementById("externalWrapper").style.display = "block";
             }
+            
+            
+            let rJoke = Math.floor(Math.random() * jokes.length);
+            document.getElementById("setup").innerHTML = jokes[rJoke].setup;
+            document.getElementById("trick").style.display = "none";
+            document.getElementById("trick").innerHTML = jokes[rJoke].punchline;
         }
 }
 
