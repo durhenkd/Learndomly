@@ -2,12 +2,16 @@
 @import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
 
 
-
 * {
     padding: 0px;
-    margin: 0px;
-	
+    margin: 0px;	
 }
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
 
 .center {
   margin: auto;
@@ -657,3 +661,43 @@ q::selection{
 	
 }
 
+
+
+
+
+/* Tags */
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-items: center;
+	max-width: 1080px;
+	text-align: center;
+}
+
+.tags .tag {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	margin: 4px;
+}
+
+.tags .tag input[type="checkbox"] {
+	position: absolute;
+	top: 0;
+	width: 0;
+	height: 0;
+  	opacity: 0;
+  	cursor: pointer;
+}
+
+.tags .tag input[type="checkbox"]:checked ~ div {
+	background-color: green;
+	color: #fff;
+}
+
+.tags .tag div {
+	border: 1px green solid;
+	padding: 4px 8px;
+	border-radius: 16px;
+}

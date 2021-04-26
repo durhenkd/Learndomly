@@ -2,90 +2,78 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,
+		initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
 		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-		
         <title>Learndomly</title>
-        
-         <script src="data.js"></script>
+		<script src="data.js"></script>
         <script src="script.js"></script>
-		<script>
-		function checkbox_checked(){
-		var chk = document.querySelectorAll('input[name^=cb_General_]')
-			if(chk.checked)
-			input.className = "btn btn-light";
-			else i.className = " btn btn-info";
-				}
-		</script>
-		
-		
-		
-		
     </head>
-	
 	<body>
-	<div class="d-flex justify-content-center divi flex-wrap">
-	 <div class="order-1 p-2 col-example">
-		<input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" />
-		<label class="btn btn-primary" for="btn-check">Checkbox button</label>
-	 </div>
-	 <div class="order-2 p-2 col-example">
-		<div class="btn-group-toggle" data-toggle="buttons">
-			  <label class="btn btn-info">
-				<input type="checkbox" id="fara_casuta"> Checked
-			  </label>
+		<div class="text-center d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+			<h3 class="m-4">Tell us what you like</h3>
+			<div class="tags">
+				<label class="tag">
+					<input type="checkbox" name="checkbox" />
+					<div></div>
+				</label>
 			</div>
-		
-	 </div>
-	 <div class="order-3 p-2 col-example">
-		<div class="btn-group" data-toggle="buttons">
-			    <label class="btn btn-primary form-check-label">
-        <input type="checkbox" class="form-check-input filled-in" autocomplete="off"> Checkbox 2
-      </label>
-			</div>
-	 </div>
-	 <div class="order-4 p-2 col-example">
-		
-		<div class="btn-group-toggle" data-toggle="buttons">
-			  <label class="btn btn-secondary active">
-				<input type="checkbox"> Checked
-			  </label>
-			</div>
-	 
-	 </div>
-	 <div class="order-5 p-2 col-example">Second flex item</div>
-	 <div class="order-5 p-2 col-example">Second flex item</div>
-	 <div class="order-5 p-2 col-example">Second flex item</div>
-	 <div class="order-5 p-3 col-example">Second flex item</div>
-	 
+			<div id="selected" class="p-4"></div>
+		</div>
+		<script type="text/javascript">
+			const tags = document.getElementsByClassName('tags')[0];
+			const items = [
+				'DIY',
+				'soccer',
+				'minecraft',
+				'physics',
+				'books',
+				'fashion',
+				'computers',
+				'cooking',
+				'chess',
+				'guitar',
+				'make-up',
+				'fitness',
+				'piano',
+				'camping',
+				'digital art',
+				'baking',
+				'gym',
+				'rubik\'s cube',
+				'painting',
+				'music',
+				'movies',
+				'photography',
+				'pets',
+				'LEGO'
+			];
+			const selected = [];
 
-		
-		
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-	</body>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	</html> 
+			items.forEach(value => {
+				const tagClone = tags.firstElementChild.cloneNode(true);
+
+				tagClone.querySelector('input[type="checkbox"').setAttribute('value', value);
+				tagClone.querySelector('div').innerText = value;
+
+				tags.appendChild(tagClone);
+			});
+
+			tags.removeChild(tags.firstElementChild);
+			tags.addEventListener('click', e => {
+				if (e.target.name === 'checkbox') {
+					if (selected.includes(e.target.value)) {
+						selected.splice(selected.indexOf(e.target.value), 1);
+					} else {
+						selected.push(e.target.value);
+					}
+
+					document.getElementById('selected').innerText = selected.join(',');
+				}
+			})
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	</body>	
+</html> 
