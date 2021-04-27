@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,46 +7,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
 		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-		
+
         <title>Learndomly</title>
-        
+
          <script src="data.js"></script>
         <script src="script.js"></script>
     </head>
-    
+
     <body>
-        
+
         <header>
-		
-		 
-		
-		<div id="bara" style="display:none"> 
+
+
+
+		<div id="bara" style="display:none">
 		<button type="button" class="buton_bara" onclick=Toclose()><img src="3pnct.png" id="iconita_b"></button>
             <div id="login" >
-                <a href="login.html">Log in</a>
+                <a href="login.php">Log in</a>
             </div>
 			<a href="contacUs.html">Contact</a>
             <a href="wholesome.html" target="_blank" class="easter"></a>
             <div id="user" style="display:none">
-                
-            </div>
+
+            </div>  <div id="logut" >
+                  <a href="logout.php">LogOut</a>
+              </div>
 		</div>
-		
+
 		<button type="button" class="buton_bara" onclick=Toopen()><img src="3pnct.png" id="iconita_o"></button>
         </header>
-       
+
      <div id="f1_container">
 	   <div id="flippy2">
 			<div class="face">
 			<!-- stergeti asta cand faceti ceva ca lumea :)))-->
 					<!--<h1>This is Learndomly</h1>-->
-                
+
 			<!-- buton de afisare setari -->
 			 <div id="ButonFiltru">
 					<button type="button" class="box" onclick=showSettings()>Show Filters</button>
                 </div>
-					
-        
+
+
 			<!-- actual settings -->
 					<div id="settings" style="display:none">
 						<form>
@@ -61,53 +65,53 @@
 			</div>
 			<div class="doi">
 			<h4> Press SPACE</h4>
-			
-			</div> 
+
+			</div>
 			<!-- in acest div va fi elementul generat random (link sau altele)-->
-					
+
 					<div id="generated">
-            
+
             <!-- welcome screen-->
 						<div class="Learn screens" id="welcome" >
 							<!--<p>Learndomly</p> -->
 							<image id="image" src="Learndomly_5.png">
-							
+
                             </image></div>
-            
+
             <!-- screen pentru diverse -->
 						<div style="display:none" class="screens" id="externalWrapper" >
                                 <p id="external"></p>
                         </div>
-            
+
             <!-- in iframe vor fi video-urile youtube width="560" height="315" -->
 						<div id="video">
 				        <iframe id="screenYT" class="screens" style="display:none" width="560" height="315"  src="about:blank" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
-						
-						 
+
+
 						<div>
 						<label id="but" for="toggle">Click me</label>
-						<input type="checkbox" id="toggle" class="vishide"> 
+						<input type="checkbox" id="toggle" class="vishide">
 						<div class="toggleButton"></div>
 						</div>
 			     </div>
            </div>
 			<div class="back">
-                <br/> <br/> <h2 id="setup">Why did the chicken cross the road?  Because the chicken behind it didn’t know how to socially distance properly. </h2> 
+                <br/> <br/> <h2 id="setup">Why did the chicken cross the road?  Because the chicken behind it didn’t know how to socially distance properly. </h2>
 				<br/>
 				<p onclick=ImageFalsepnch()>&#128540 </p>
 				<h3 id="pnch"> </h3>
 				<br/>
                  <img src="sageatab.png" id="sageata" onclick=ImageFalse()>
 				 <br/>
-                 <h4 id="trick"> Hehehe tricked you! Press the footer to get back to homepage</h4>				 
+                 <h4 id="trick"> Hehehe tricked you! Press the footer to get back to homepage</h4>
 			</div>
 		</div>
 	 </div>
-  
-	  
-	   
+
+
+
 	    <div  id="buton" onclick=FlipButton()></div>
-	   
+
     </body>
-</html> 
+</html>
